@@ -28,7 +28,6 @@ def staticThresholdTester(start,end,step,data):
         steps.append(staticThresholdStepCounter(i,data))
     return steps
 def dynamicThreshold(coeff,window,data):
-    steps=0
     windowCounter=0
     mini,maxi=findMinMax(data[0:window])
     for i in range(len(data)):
